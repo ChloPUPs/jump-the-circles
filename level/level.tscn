@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ccqyj882bjnyj"]
+
+[ext_resource type="Script" uid="uid://bedo3etai56fo" path="res://level/scripts/level.gd" id="1_7lnir"]
+[ext_resource type="PackedScene" uid="uid://buxh65p5os23f" path="res://common/rect/rect.tscn" id="2_5gx2l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5gx2l"]
+size = Vector2(958, 46)
+
+[node name="Level" type="Node2D" unique_id=861841519]
+script = ExtResource("1_7lnir")
+
+[node name="PlayerStart" type="Marker2D" parent="." unique_id=1880118613]
+unique_name_in_owner = true
+
+[node name="MainPlatform" type="StaticBody2D" parent="." unique_id=711601488]
+position = Vector2(0, 239)
+
+[node name="Rect" parent="MainPlatform" unique_id=1169037193 instance=ExtResource("2_5gx2l")]
+width = 960.0
+height = 48.0
+anti_aliased = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MainPlatform" unique_id=108862017]
+shape = SubResource("RectangleShape2D_5gx2l")

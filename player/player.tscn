@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bi2xkly2blyut"]
+
+[ext_resource type="PackedScene" uid="uid://d26h7qutix6g" path="res://common/circle/circle.tscn" id="1_oul6g"]
+[ext_resource type="Script" uid="uid://b5427156lo8aj" path="res://player/scripts/player.gd" id="1_rkbax"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oul6g"]
+radius = 29.017237
+
+[node name="Player" type="CharacterBody2D" unique_id=1935331843]
+position = Vector2(0, -3)
+script = ExtResource("1_rkbax")
+
+[node name="Circle" parent="." unique_id=1672380549 instance=ExtResource("1_oul6g")]
+radius = 32.0
+color = Color(1, 0, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2115139809]
+position = Vector2(0, 3)
+shape = SubResource("CircleShape2D_oul6g")
