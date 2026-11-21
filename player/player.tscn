@@ -7,7 +7,6 @@
 radius = 29.017237
 
 [node name="Player" type="CharacterBody2D" unique_id=1935331843]
-position = Vector2(0, -3)
 script = ExtResource("1_rkbax")
 
 [node name="Circle" type="Node2D" parent="." unique_id=1749062126]
