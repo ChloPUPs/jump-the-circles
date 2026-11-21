@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://djqtmdg1p4qb3"]
+
+[ext_resource type="Script" uid="uid://drg3s62iieytm" path="res://core/main.gd" id="1_3gdo0"]
+[ext_resource type="Script" uid="uid://dpo8qxjf4gjq8" path="res://core/game_state.gd" id="2_3gdo0"]
+
+[node name="Main" type="Node2D" unique_id=187509800]
+process_mode = 3
+script = ExtResource("1_3gdo0")
+
+[node name="Systems" type="Node" parent="." unique_id=1077572534]
+
+[node name="GameState" type="Node" parent="Systems" unique_id=1116490053]
+unique_name_in_owner = true
+script = ExtResource("2_3gdo0")
+metadata/_custom_type_script = "uid://dpo8qxjf4gjq8"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1102337400]
+
+[node name="World" type="Node2D" parent="." unique_id=1587752154]
+process_mode = 1
+
+[node name="LevelRoot" type="Node2D" parent="World" unique_id=2123907099 groups=["level_root"]]
+
+[node name="EntityRoot" type="Node2D" parent="World" unique_id=1937170889 groups=["entity_root"]]
+
+[node name="HUDLayer" type="CanvasLayer" parent="." unique_id=1054586797]
+layer = 3

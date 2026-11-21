@@ -1,6 +1,8 @@
 class_name Player
 extends CharacterBody2D
 
+signal jumped_over_obstacle
+
 @export var speed: float = 300
 @export var jump_velocity: float = -500
 @export var gravity_multiplier: float = 1

@@ -23,6 +23,11 @@ window/size/viewport_height=720
 window/stretch/mode="canvas_items"
 window/stretch/aspect="keep_height"
 
+[global_group]
+
+entity_root=""
+level_root=""
+
 [input]
 
 left={

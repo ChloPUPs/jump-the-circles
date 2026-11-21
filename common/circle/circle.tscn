@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://d26h7qutix6g"]
-
-[ext_resource type="Script" uid="uid://chjsgrgrngrf8" path="res://common/circle/scripts/circle.gd" id="1_ot13w"]
-
-[node name="Circle" type="Node2D" unique_id=1672380549]
-script = ExtResource("1_ot13w")

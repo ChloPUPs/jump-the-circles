@@ -1,4 +1,5 @@
 @tool
+class_name Rect
 extends Node2D
 
 @export var width: float = 16

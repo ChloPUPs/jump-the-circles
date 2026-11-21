@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://buxh65p5os23f"]
-
-[ext_resource type="Script" uid="uid://cjyrb7had3ptb" path="res://common/rect/scripts/rect.gd" id="1_elnok"]
-
-[node name="Rect" type="Node2D" unique_id=1169037193]
-script = ExtResource("1_elnok")

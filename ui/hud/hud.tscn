@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dru0fot0bxgqn"]
+
+[ext_resource type="FontFile" uid="uid://couraq8pb28dd" path="res://ui/fonts/Chewy-Regular.ttf" id="1_xmswo"]
+[ext_resource type="Script" uid="uid://ceewpx1edsoxf" path="res://ui/hud/point_display.gd" id="2_4d6w6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hvgxb"]
+font = ExtResource("1_xmswo")
+font_size = 48
+
+[node name="HUD" type="Control" unique_id=215976596]
+process_mode = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=820988899]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+
+[node name="PointDisplay" type="Label" parent="MarginContainer" unique_id=72573103]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Score: X"
+label_settings = SubResource("LabelSettings_hvgxb")
+script = ExtResource("2_4d6w6")
